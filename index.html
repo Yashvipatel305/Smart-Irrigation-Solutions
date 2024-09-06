@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Irrigation Solutions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #00796b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #004d40;
+            margin-bottom: 20px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        nav ul li a:hover {
+            background-color: #003d33;
+            border-radius: 5px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .login-section {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+        }
+
+        .login-section h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+            color: #00796b;
+        }
+
+        .login-section form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        .login-section form input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .login-section form button {
+            background-color: #00796b;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .login-section form button:hover {
+            background-color: #004d40;
+        }
+
+        main {
+            flex: 1;
+            min-width: 600px;
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .image-container:hover .image-overlay {
+            opacity: 1;
+        }
+
+        .image-overlay h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .image-overlay p {
+            margin: 10px 0 0;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 2em;
+            margin-top: 0;
+            color: #00796b;
+        }
+
+        section p {
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        footer {
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="crop1.html">crop details</a></li>
+            </ul>
+        </nav>
+        <h1>Smart Irrigation Solutions</h1>
+        <p>Optimize your water usage with cutting-edge technology</p>
+    </header>
+
+    <div class="container">
+        <aside class="login-section">
+            <h2>Login</h2>
+            <form action="submit_form.php" method="post">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" name="login-email" required>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="login-password" required>
+                <button type="submit">Login</button>
+            </form>
+        </aside>
+
+        <main>
+            <section id="home">
+                <h2>Welcome to Smart Irrigation</h2>
+                <p>Discover the future of efficient farming with our innovative smart irrigation systems.</p>
+                <div class="image-container">
+                    <img src="abc.jpg" alt="Smart Irrigation Technology">
+                    <div class="image-overlay">
+                        <h3>Smart Irrigation Technology</h3>
+                        <p>Learn how our solutions can transform your irrigation practices.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="blog">
+                <h2>Latest News</h2>
+                <article>
+                    <h3>The Future of Smart Irrigation</h3>
+                    <p>Learn about the latest trends and technologies in smart irrigation.</p>
+                </article>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Smart Irrigation Solutions. All rights reserved.</p>
+    </footer>
+</body>
+</html>

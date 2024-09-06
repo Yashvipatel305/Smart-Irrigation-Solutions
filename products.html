@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Irrigation Solutions - Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product-item {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: calc(33.333% - 20px);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .product-item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-info h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        .product-info p {
+            color: #555;
+        }
+
+        .cta-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .cta-button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Smart Irrigation Solutions</h1>
+        <p>Explore our range of innovative irrigation products</p>
+    </header>
+
+    <div class="container">
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="product1.jpg" alt="Smart Irrigation Sensor">
+                    <div class="product-info">
+                        <h3>Smart Irrigation Sensor</h3>
+                        <p>Monitor soil moisture levels with our advanced sensors. Ensure optimal watering and conserve water effectively.</p>
+                        <a href="#contact" class="cta-button">Learn More</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="product2.jpg" alt="Automated Irrigation Controller">
+                    <div class="product-info">
+                        <h3>Automated Irrigation Controller</h3>
+                        <p>Automate your irrigation schedules with our intelligent controllers. Customize and manage watering from anywhere.</p>
+                        <a href="#contact" class="cta-button">Learn More</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="product3.jpg" alt="Water Usage Monitor">
+                    <div class="product-info">
+                        <h3>Water Usage Monitor</h3>
+                        <p>Track and analyze water usage to optimize efficiency. Get detailed insights and reduce your water bills.</p>
+                        <a href="#contact" class="cta-button">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Smart Irrigation Solutions. All rights reserved.</p>
+    </footer>
+</body>
+</html>

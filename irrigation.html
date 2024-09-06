@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Irrigation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Irrigation Dashboard</h1>
+    </header>
+
+    <main>
+        <section class="sensor-data">
+            <h2>Current Sensor Data</h2>
+            <p>Soil Moisture: <span id="moistureLevel">--</span>%</p>
+            <p>Temperature: <span id="temperature">--</span>°C</p>
+            <p>Humidity: <span id="humidity">--</span>%</p>
+        </section>
+
+        <section class="control-panel">
+            <h2>Irrigation Control</h2>
+            <button id="startIrrigation">Start Irrigation</button>
+            <button id="stopIrrigation">Stop Irrigation</button>
+        </section>
+
+        <section class="log">
+            <h2>Irrigation Log</h2>
+            <ul id="irrigationLog"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Smart Irrigation System</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
